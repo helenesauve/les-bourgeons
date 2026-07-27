@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter — Les bourgeons</title>
+  <meta name="description" content="Inscrivez-vous à la newsletter de Les bourgeons pour recevoir nos actualités sur la conservation des arbres en France.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-row">
+        <a href="index.html" class="brand">
+          <div class="brand-logo">
+            <span>LB</span>
+          </div>
+          <span class="brand-name">Collectif Les Bourgeons</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="get-involved.html">S'impliquer</a>
+          <a href="newsletter.html" class="active">Newsletter</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button id="menu-btn" class="menu-btn" aria-label="Ouvrir le menu">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-inner">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="get-involved.html">S'impliquer</a>
+          <a href="newsletter.html" class="active">Newsletter</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="page-header-inner">
+        <p class="page-header-eyebrow">Restez informé·e</p>
+        <h1 class="page-header-title">Notre newsletter</h1>
+        <p class="page-header-subtitle">
+          Actualités, événements, portraits d'arbres et actions de conservation — directement dans votre boîte mail.
+        </p>
+      </div>
+    </section>
+
+    <!-- Form section -->
+    <section class="newsletter-page-section">
+
+      <!-- What to expect -->
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L10 16L18 8"/>
+            </svg>
+          </div>
+          <div>
+            <p class="benefit-title">Sans spam</p>
+            <p class="benefit-text">1 à 2 envois par mois maximum</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L10 16L18 8"/>
+            </svg>
+          </div>
+          <div>
+            <p class="benefit-title">Désabonnement facile</p>
+            <p class="benefit-text">Un clic pour vous désinscrire à tout moment</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L10 16L18 8"/>
+            </svg>
+          </div>
+          <div>
+            <p class="benefit-title">Données protégées</p>
+            <p class="benefit-text">Vos données ne sont jamais revendues</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           INSTRUCTIONS POUR L'INTÉGRATION MAILCHIMP
+           ============================================================
+           1. Créez un compte gratuit sur mailchimp.com
+           2. Créez une "Audience" (liste de contacts)
+           3. Allez dans Audience > Signup forms > Embedded forms
+           4. Copiez le code HTML fourni par Mailchimp
+           5. Supprimez le bloc ci-dessous et collez le code Mailchimp à la place
+           ============================================================ -->
+
+      <div class="contact-form-card">
+        <h2 class="contact-heading">S'inscrire à la newsletter</h2>
+
+        <!-- MAILCHIMP EMBED : remplacez ce formulaire par votre code Mailchimp -->
+        <div class="mailchimp-placeholder">
+          <p class="mailchimp-placeholder-title">Formulaire Mailchimp à intégrer ici</p>
+          <p class="mailchimp-placeholder-text">Suivez les instructions dans le code source de ce fichier pour intégrer votre formulaire Mailchimp.</p>
+        </div>
+        <!-- FIN DU BLOC PLACEHOLDER -->
+
+        <!-- Formulaire de secours (si Mailchimp n'est pas encore configuré) -->
+        <form action="mailto:VOTRE-EMAIL@example.com" method="GET" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse e-mail <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+          </div>
+          <div class="consent-row">
+            <input type="checkbox" id="consent" name="consent" required class="consent-checkbox">
+            <label for="consent" class="consent-label">
+              J'accepte de recevoir la newsletter de Les bourgeons. Je peux me désabonner à tout moment. Conformément au RGPD, mes données ne seront pas transmises à des tiers.
+            </label>
+          </div>
+          <button type="submit" class="btn-form-submit">S'inscrire</button>
+        </form>
+      </div>
+
+      <!-- GDPR notice -->
+      <div class="gdpr-notice">
+        <h3>Protection de vos données (RGPD)</h3>
+        <p>
+          Les informations recueillies via ce formulaire sont collectées par l'association Les bourgeons, responsable du traitement,
+          aux fins d'envoi de notre newsletter. Elles sont conservées jusqu'à votre désinscription et ne sont en aucun cas cédées à des tiers.
+          Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez
+          d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour exercer ces droits, contactez-nous à
+          <a href="mailto:VOTRE-EMAIL@example.com">VOTRE-EMAIL@example.com</a>.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-row">
+        <div class="footer-brand">
+          <p>Les bourgeons</p>
+          <p>Conservation des arbres en France</p>
+        </div>
+        <div class="footer-socials">
+          <a href="#VOTRE-LIEN-FACEBOOK" class="footer-social-icon" aria-label="Facebook">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#VOTRE-LIEN-INSTAGRAM" class="footer-social-icon" aria-label="Instagram">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="0.5" fill="white" stroke="none"/></svg>
+          </a>
+          <a href="#VOTRE-LIEN-X" class="footer-social-icon" aria-label="X (Twitter)">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <p>© 2026 Les bourgeons</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('is-open'));
+  </script>
+</body>
+</html>
