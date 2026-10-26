@@ -16,14 +16,14 @@
   <nav class="navbar">
     <div class="navbar-inner">
       <div class="navbar-row">
-        <a href="index.html" class="brand">
+        <a href="/" class="brand">
           <div class="brand-logo">
             <img src="images/logo-yellow.jpg" alt="Collectif Les Bourgeons logo" />
           </div>
           <span class="brand-name">Collectif Les Bourgeons</span>
         </a>
         <div class="nav-links">
-          <a href="index">Accueil</a>
+          <a href="/">Accueil</a>
           <a href="about">À propos</a>
           <a href="blog">Blog</a>
           <a href="get-involved">S'impliquer</a>
@@ -38,12 +38,12 @@
       </div>
       <div id="mobile-menu" class="mobile-menu">
         <div class="mobile-menu-inner">
-          <a href="index.html">Accueil</a>
-          <a href="about.html">À propos</a>
-          <a href="blog.html">Blog</a>
-          <a href="get-involved.html">S'impliquer</a>
-          <a href="newsletter.html">Newsletter</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="/">Accueil</a>
+          <a href="about">À propos</a>
+          <a href="blog">Blog</a>
+          <a href="get-involved">S'impliquer</a>
+          <a href="newsletter">Newsletter</a>
+          <a href="contact" class="active">Contact</a>
         </div>
       </div>
     </div>
@@ -93,75 +93,23 @@
             </p>
             <ul class="contact-list">
               <li>📧 E-mail direct : <a href="mailto:collectiflesbourgeons@gmail.com">collectiflesbourgeons@gmail.com</a></li>
-              <li>💬 Formulaire de contact : (Nom, Prénom, Adresse e-mail, Sujet : [Alerte / Demande d'information / Proposition de projet / Autre], Message)</li>
             </ul>
           </div>
 
           <div class="contact-block">
             <h2 class="contact-heading">Réseaux sociaux</h2>
             <div class="social-list">
-              <a href="#VOTRE-LIEN-FACEBOOK" class="social-list-item">
+              <a href="https://www.facebook.com/profile.php?id=61587497155427" class="social-list-item">
                 <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 <span>Facebook</span>
               </a>
-              <a href="#VOTRE-LIEN-INSTAGRAM" class="social-list-item">
+              <a href="https://www.instagram.com/collectif.les.bourgeons?igsh=MTI3ZDdxcW9ycHR5Yw%3D%3D" class="social-list-item">
                 <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
                 <span>Instagram</span>
-              </a>
-              <a href="#VOTRE-LIEN-X" class="social-list-item">
-                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                <span>X / Twitter</span>
               </a>
             </div>
           </div>
 
-        </div>
-
-        <!-- Contact form -->
-        <div class="contact-form-wrap">
-          <div class="contact-form-card">
-            <h2 class="contact-heading">Envoyer un message</h2>
-            <!--
-              Ce formulaire utilise "mailto:" — il ouvre le client mail de l'utilisateur.
-              Pour un formulaire avec envoi côté serveur, remplacez l'action par Formspree
-              (https://formspree.io) ou un autre service : action="https://formspree.io/f/VOTRE-ID"
-            -->
-            <form action="mailto:collectiflesbourgeons@gmail.com" method="GET" enctype="text/plain" class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="nom">Nom</label>
-                  <input type="text" id="nom" name="nom" placeholder="Votre nom">
-                </div>
-                <div class="form-group">
-                  <label for="prenom">Prénom</label>
-                  <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required placeholder="votre@email.com">
-              </div>
-              <div class="form-group">
-                <label for="sujet">Sujet</label>
-                <select id="sujet" name="sujet">
-                  <option value="">Choisir un sujet…</option>
-                  <option value="benevole">Devenir bénévole</option>
-                  <option value="don">Don et soutien financier</option>
-                  <option value="presse">Presse et médias</option>
-                  <option value="partenariat">Partenariat</option>
-                  <option value="autre">Autre</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Message <span class="required">*</span></label>
-                <textarea id="message" name="message" required rows="5" placeholder="Votre message…"></textarea>
-              </div>
-              <button type="submit" class="btn-form-submit">Envoyer le message</button>
-              <p id="form-confirmation" class="form-confirmation" role="status" aria-live="polite" hidden>
-                ✅ Votre client e-mail va s'ouvrir avec votre message pré-rempli. Il ne vous restera plus qu'à cliquer sur « Envoyer » dans votre messagerie.
-              </p>
-            </form>
-          </div>
         </div>
 
       </div>
@@ -178,19 +126,16 @@
           <p>Conservation des arbres en France</p>
         </div>
         <div class="footer-socials">
-          <a href="#VOTRE-LIEN-FACEBOOK" class="footer-social-icon" aria-label="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=61587497155427" class="footer-social-icon" aria-label="Facebook">
             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
-          <a href="#VOTRE-LIEN-INSTAGRAM" class="footer-social-icon" aria-label="Instagram">
+          <a href="https://www.instagram.com/collectif.les.bourgeons?igsh=MTI3ZDdxcW9ycHR5Yw%3D%3D" class="footer-social-icon" aria-label="Instagram">
             <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="0.5" fill="white" stroke="none"/></svg>
-          </a>
-          <a href="#VOTRE-LIEN-X" class="footer-social-icon" aria-label="X (Twitter)">
-            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
         </div>
         <div class="footer-legal">
-          <a href="legal.html">Mentions légales</a>
-          <a href="legal.html#rgpd">Politique de confidentialité</a>
+          <a href="legal">Mentions légales</a>
+          <a href="legal#rgpd">Politique de confidentialité</a>
           <p>© 2026 Les bourgeons</p>
         </div>
       </div>
@@ -201,14 +146,6 @@
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     btn.addEventListener('click', () => menu.classList.toggle('is-open'));
-
-    const contactForm = document.querySelector('.contact-form');
-    const confirmation = document.getElementById('form-confirmation');
-    if (contactForm && confirmation) {
-      contactForm.addEventListener('submit', () => {
-        confirmation.hidden = false;
-      });
-    }
   </script>
 </body>
 </html>

@@ -1014,6 +1014,11 @@ blockquote,
   gap: 3rem;
 }
 
+.contact-grid a {
+  color: var(--brand-teal);
+  text-decoration: underline;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -1201,10 +1206,11 @@ blockquote,
 
 @media (min-width: 1024px) {
   .contact-grid {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr;
+    max-width: 42rem;
+    margin: 0 auto;
   }
 }
-
 /* =========================================
    Newsletter page
    ========================================= */
