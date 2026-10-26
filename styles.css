@@ -1504,3 +1504,8 @@ blockquote,
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
+
+.newsletter-soon a{
+  color: var(--brand-teal);
+  text-decoration: underline;
+}
