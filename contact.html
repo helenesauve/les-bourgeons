@@ -23,12 +23,12 @@
           <span class="brand-name">Collectif Les Bourgeons</span>
         </a>
         <div class="nav-links">
-          <a href="index.html">Accueil</a>
-          <a href="about.html">À propos</a>
-          <a href="blog.html">Blog</a>
-          <a href="get-involved.html">S'impliquer</a>
-          <a href="newsletter.html">Newsletter</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="index">Accueil</a>
+          <a href="about">À propos</a>
+          <a href="blog">Blog</a>
+          <a href="get-involved">S'impliquer</a>
+          <a href="newsletter">Newsletter</a>
+          <a href="contact" class="active">Contact</a>
         </div>
         <button id="menu-btn" class="menu-btn" aria-label="Ouvrir le menu">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@
               Pour un formulaire avec envoi côté serveur, remplacez l'action par Formspree
               (https://formspree.io) ou un autre service : action="https://formspree.io/f/VOTRE-ID"
             -->
-            <form action="mailto:contact@lesbourgeons.fr" method="GET" enctype="text/plain" class="contact-form">
+            <form action="mailto:collectiflesbourgeons@gmail.com" method="GET" enctype="text/plain" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
                   <label for="nom">Nom</label>
@@ -157,6 +157,9 @@
                 <textarea id="message" name="message" required rows="5" placeholder="Votre message…"></textarea>
               </div>
               <button type="submit" class="btn-form-submit">Envoyer le message</button>
+              <p id="form-confirmation" class="form-confirmation" role="status" aria-live="polite" hidden>
+                ✅ Votre client e-mail va s'ouvrir avec votre message pré-rempli. Il ne vous restera plus qu'à cliquer sur « Envoyer » dans votre messagerie.
+              </p>
             </form>
           </div>
         </div>
@@ -198,6 +201,14 @@
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     btn.addEventListener('click', () => menu.classList.toggle('is-open'));
+
+    const contactForm = document.querySelector('.contact-form');
+    const confirmation = document.getElementById('form-confirmation');
+    if (contactForm && confirmation) {
+      contactForm.addEventListener('submit', () => {
+        confirmation.hidden = false;
+      });
+    }
   </script>
 </body>
 </html>
